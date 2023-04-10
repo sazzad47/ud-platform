@@ -1,0 +1,288 @@
+/*
+Template Name: Velzon - Admin & Dashboard Template
+Author: Themesbrand
+Website: https://themesbrand.com/
+Contact: support@themesbrand.com
+File: Custom Css File
+*/
+
+.css-b62m3t-container {
+    .css-1s2u09g-control {
+        background-color: $card-bg;
+        border-color: $border-color;
+        &:hover {
+            border-color: $border-color;
+        }
+    }
+    .css-1pahdxg-control {
+        background-color: $card-bg;
+        border-color: $border-color;
+        box-shadow: none;
+        &:hover {
+            border-color: $border-color !important;
+        }
+    }
+    .css-26l3qy-menu {
+        background-color: $dropdown-bg;
+        .css-1n7v3ny-option {
+            cursor: pointer;
+            background-color: $dropdown-link-hover-bg;
+            &:active {
+                background-color: $dropdown-link-hover-bg;
+            }
+        }
+    }
+    .css-1rhbuit-multiValue {
+        background-color: var(--#{$variable-prefix}light);
+    }
+    .css-12jo7m5 {
+        color: $heading-color;
+    }
+    .css-6j8wv5-Input,
+    .css-qc6sy-singleValue {
+        color: $heading-color;
+    }
+}
+
+.marketplace-swiper .swiper-button-next,
+.marketplace-swiper .swiper-button-prev {
+    top: 24px;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 22px;
+    line-height: 2;
+}
+
+.marquee div {
+    display: block;
+    width: 200%;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 35s linear infinite;
+}
+
+.marquee span {
+    float: left;
+    width: 50%;
+}
+
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+/* 
+   --------------------------
+   -- Added by Juan Guirao --
+   -------------------------- 
+*/
+
+/* 
+   Login page CSS 
+*/
+
+.login-main-container,
+.register-main-container {
+    background-color: $gray-800;
+}
+
+.login-logo-card,
+.register-logo-card {
+    background-color: $gray-300;
+}
+
+.login-logo-circle,
+.register-logo-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $gray-700;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.project-thumbnail {
+    height: 8rem;
+    object-fit: cover;
+}
+
+.project-dropdown-container {
+    width: 6rem;
+    min-width: 0;
+}
+
+.horizontal-dropdown-menu {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 10rem;
+}
+
+.horizontal-dropdown-menu .dropdown-item {
+    width: 1.4rem;
+    padding: 0;
+}
+
+.sidebar-full-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: stretch;
+}
+
+.sidebar-menu-simplebar .simplebar-content-wrapper {
+    display: flex;
+}
+
+.sidebar-menu-simplebar .simplebar-content {
+    display: flex;
+}
+
+.credit-decimals {
+    vertical-align: 25%;
+    font-size: 0.5rem;
+}
+
+.dataset-action-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.clickable-icon {
+    cursor: pointer;
+}
+
+.blue-200-icon {
+    color: #9ec5fe;
+}
+
+.download-modal-icon {
+    filter: invert(66%) sepia(96%) saturate(335%) hue-rotate(186deg)
+        brightness(101%) contrast(99%);
+    width: 100px;
+    height: 100px;
+}
+
+.upload-dataset-dropzone-wrapper .dropzone {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.link-dataset-modal .modal-content {
+    min-height: 85vh;
+}
+
+.link-dataset-modal .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.link-dataset-modal .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.link-dataset-modal div.link-dataset-text + div {
+    flex-grow: 1;
+}
+
+.link-dataset-multiselect .search-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link-dataset-multiselect #search_input {
+    color: white;
+    display: block;
+    width: 100%;
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
+    background-color: #909090;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #b0b0b0;
+}
+
+.link-dataset-multiselect #search_input::placeholder {
+    color: #d0d0d0;
+}
+
+.link-dataset-modal multiSelectContainer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.link-dataset-modal .multiSelectContainer li:hover {
+    background: #909090;
+}
+
+.link-dataset-modal .multiSelectContainer .highlightOption {
+    background: #909090;
+}
+
+.link-dataset-modal .multiSelectContainer .searchWrapper {
+    flex: 5;
+}
+
+.link-dataset-modal .multiSelectContainer .optionListContainer {
+    flex: 1;
+    display: block; /* try with flex !!! */
+    background-color: gray;
+    max-height: 100%;
+}
+
+.link-dataset-multiselect .optionContainer {
+    background-color: gray;
+}
+
+.dataset-link-multiselect-wrapper {
+    background-color: $card-bg;
+    min-height: 60vh;
+}
+
+.detected-object-image-modal .modal-content {
+    height: 60%;
+}
+
+.detected-object-image-modal img {
+    width: 100%;
+    height: 100%;
+}
+
+.red-border-dropzone {
+    border-color: #dc3545 !important;
+}
+
+#back-to-top {
+    bottom: 0.8rem;
+}
+
+.tiny-warning-text {
+    font-size: 0.7rem;
+}
+
+.alert-msg-show-centered {
+    position: fixed;
+    top: 40px;
+    left: 45%;
+    z-index: 1005;
+}
