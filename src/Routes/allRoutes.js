@@ -223,6 +223,9 @@ import NFTLanding from '../pages/Landing/NFTLanding';
 
 // User Profile
 import UserProfile from '../pages/Authentication/user-profile';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const authProtectedRoutes = [
     { path: '/datasets', component: Datasets },
